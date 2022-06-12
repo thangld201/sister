@@ -28,6 +28,7 @@ class MeanEmbedding(SentenceEmbedding):
         tokenizer = tokenizer or {
             "en": SimpleTokenizer(),
             "fr": SimpleTokenizer(),
+            'vi": SimpleTokenizer(),
             "ja": JapaneseTokenizer(),
         }[lang]
         word_embedder = word_embedder or FasttextEmbedding(lang)
