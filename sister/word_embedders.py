@@ -32,6 +32,7 @@ def get_word2vec(lang: str = "en"):
     urls = {
         "en": "https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz",
         "ja": "http://public.shiroyagi.s3.amazonaws.com/latest-ja-word2vec-gensim-model.zip",
+        "vi":"https://thiaisotajppub.s3-ap-northeast-1.amazonaws.com/publicfiles/wiki.vi.model.bin.gz",
     }
     path = download.cached_download(urls[lang])
     path = Path(path)
